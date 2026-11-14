@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.CourierLoginTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.580 s -- in com.example.CourierLoginTest

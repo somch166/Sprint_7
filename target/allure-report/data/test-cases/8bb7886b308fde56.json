@@ -1,0 +1,52 @@
+{
+  "uid" : "8bb7886b308fde56",
+  "name" : "getOrderList",
+  "historyId" : "com.example.OrderListTest:com.example.OrderListTest#getOrderList",
+  "time" : {
+    "duration" : 14801
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e57872d9e6572b2",
+      "name" : "System out",
+      "source" : "e57872d9e6572b2.txt",
+      "type" : "text/plain",
+      "size" : 304
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "com.example.OrderListTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.example.OrderListTest"
+  }, {
+    "name" : "package",
+    "value" : "com.example.OrderListTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8bb7886b308fde56.json",
+  "parameterValues" : [ ]
+}

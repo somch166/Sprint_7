@@ -1,0 +1,135 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "createOrderWithVariousColors[Цвет(а): [BLACK, GREY]]",
+    "uid" : "4d242fb01c61a2fc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 412
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "loginWithWrongPassword",
+    "uid" : "c1f44a1cc4f57638",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 391
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "createOrderWithVariousColors[Цвет(а): [GREY]]",
+    "uid" : "e9a5ca2f1898fb8b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 429
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "loginWithoutPassword",
+    "uid" : "bbb90acf8edcdb4f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "loginNonExistentUser",
+    "uid" : "b9a814e326882453",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 361
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "createOrderWithVariousColors[Цвет(а): null]",
+    "uid" : "c0c55b3427cb4847",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 388
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "getOrderList",
+    "uid" : "8bb7886b308fde56",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 14801
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "createCourierSuccessfully",
+    "uid" : "a1e251915b5cc386",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 33938
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "loginWithWrongLogin",
+    "uid" : "3e4ed12ac3ae0db1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 408
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "courierCanLogin",
+    "uid" : "9fe92d75f7298e10",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "createDuplicateCourier",
+    "uid" : "704f3f50c87e6d56",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 413
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "loginWithoutLogin",
+    "uid" : "ec34295119ef2a5f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 418
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "createOrderWithVariousColors[Цвет(а): [BLACK]]",
+    "uid" : "9dbc6bc70131ecb9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "duration" : 409
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
+}
