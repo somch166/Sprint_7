@@ -1,0 +1,52 @@
+{
+  "uid" : "ec34295119ef2a5f",
+  "name" : "loginWithoutLogin",
+  "historyId" : "com.example.CourierLoginTest:com.example.CourierLoginTest#loginWithoutLogin",
+  "time" : {
+    "duration" : 418
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f5b4cda785fbd4b1",
+      "name" : "System out",
+      "source" : "f5b4cda785fbd4b1.txt",
+      "type" : "text/plain",
+      "size" : 310
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "com.example.CourierLoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.example.CourierLoginTest"
+  }, {
+    "name" : "package",
+    "value" : "com.example.CourierLoginTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ec34295119ef2a5f.json",
+  "parameterValues" : [ ]
+}

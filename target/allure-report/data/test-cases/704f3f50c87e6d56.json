@@ -1,0 +1,52 @@
+{
+  "uid" : "704f3f50c87e6d56",
+  "name" : "createDuplicateCourier",
+  "historyId" : "com.example.CourierCreateTest:com.example.CourierCreateTest#createDuplicateCourier",
+  "time" : {
+    "duration" : 413
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f56ad3220d534019",
+      "name" : "System out",
+      "source" : "f56ad3220d534019.txt",
+      "type" : "text/plain",
+      "size" : 312
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "com.example.CourierCreateTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.example.CourierCreateTest"
+  }, {
+    "name" : "package",
+    "value" : "com.example.CourierCreateTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "704f3f50c87e6d56.json",
+  "parameterValues" : [ ]
+}

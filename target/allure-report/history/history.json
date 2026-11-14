@@ -1,0 +1,225 @@
+{
+  "com.example.OrderCreateTest:com.example.OrderCreateTest#createOrderWithVariousColors[Цвет(а): [GREY]]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e9a5ca2f1898fb8b",
+      "status" : "passed",
+      "time" : {
+        "duration" : 429
+      }
+    } ]
+  },
+  "com.example.OrderCreateTest:com.example.OrderCreateTest#createOrderWithVariousColors[Цвет(а): [BLACK, GREY]]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4d242fb01c61a2fc",
+      "status" : "passed",
+      "time" : {
+        "duration" : 412
+      }
+    } ]
+  },
+  "com.example.OrderCreateTest:com.example.OrderCreateTest#createOrderWithVariousColors[Цвет(а): [BLACK]]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9dbc6bc70131ecb9",
+      "status" : "passed",
+      "time" : {
+        "duration" : 409
+      }
+    } ]
+  },
+  "com.example.OrderCreateTest:com.example.OrderCreateTest#createOrderWithVariousColors[Цвет(а): null]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c0c55b3427cb4847",
+      "status" : "passed",
+      "time" : {
+        "duration" : 388
+      }
+    } ]
+  },
+  "com.example.CourierLoginTest:com.example.CourierLoginTest#loginWithWrongPassword" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c1f44a1cc4f57638",
+      "status" : "passed",
+      "time" : {
+        "duration" : 391
+      }
+    } ]
+  },
+  "com.example.CourierLoginTest:com.example.CourierLoginTest#loginNonExistentUser" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b9a814e326882453",
+      "status" : "passed",
+      "time" : {
+        "duration" : 361
+      }
+    } ]
+  },
+  "com.example.CourierLoginTest:com.example.CourierLoginTest#loginWithoutLogin" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ec34295119ef2a5f",
+      "status" : "passed",
+      "time" : {
+        "duration" : 418
+      }
+    } ]
+  },
+  "com.example.CourierLoginTest:com.example.CourierLoginTest#loginWithWrongLogin" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e4ed12ac3ae0db1",
+      "status" : "passed",
+      "time" : {
+        "duration" : 408
+      }
+    } ]
+  },
+  "com.example.CourierCreateTest:com.example.CourierCreateTest#createCourierSuccessfully" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a1e251915b5cc386",
+      "status" : "passed",
+      "time" : {
+        "duration" : 33938
+      }
+    } ]
+  },
+  "com.example.CourierLoginTest:com.example.CourierLoginTest#courierCanLogin" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9fe92d75f7298e10",
+      "status" : "skipped",
+      "statusDetails" : "Баг API: сервер возвращает 504 Gateway Timeout при успешном логине (нестабильный стенд)",
+      "time" : {
+        "duration" : 0
+      }
+    } ]
+  },
+  "com.example.OrderListTest:com.example.OrderListTest#getOrderList" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8bb7886b308fde56",
+      "status" : "passed",
+      "time" : {
+        "duration" : 14801
+      }
+    } ]
+  },
+  "com.example.CourierLoginTest:com.example.CourierLoginTest#loginWithoutPassword" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bbb90acf8edcdb4f",
+      "status" : "skipped",
+      "statusDetails" : "Баг API: сервер возвращает 504 Gateway Timeout при передаче null в password",
+      "time" : {
+        "duration" : 0
+      }
+    } ]
+  },
+  "com.example.CourierCreateTest:com.example.CourierCreateTest#createDuplicateCourier" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "704f3f50c87e6d56",
+      "status" : "passed",
+      "time" : {
+        "duration" : 413
+      }
+    } ]
+  }
+}
