@@ -14,6 +14,7 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
@@ -44,7 +45,6 @@ public class CourierLoginTest {
     }
 
     @Test
-    @Ignore("Баг API: сервер возвращает 504 Gateway Timeout при успешном логине (нестабильный стенд)")
     @Story("Успешный логин")
     @DisplayName("Успешный логин курьера")
     @Description("Проверяем, что курьер может авторизоваться, код 200 и тело содержит id")
@@ -52,7 +52,7 @@ public class CourierLoginTest {
         Response response = courierClient.login(courier);
 
         response.then()
-                .statusCode(200)
+                .statusCode(SC_OK)
                 .body("id", notNullValue());
 
         courierId = response.then().extract().jsonPath().getInt("id");
@@ -67,7 +67,7 @@ public class CourierLoginTest {
         Response response = courierClient.login(wrongCourier);
 
         response.then()
-                .statusCode(404)
+                .statusCode(SC_NOT_FOUND)
                 .body("message", equalTo("Учетная запись не найдена"));
     }
 
@@ -80,7 +80,7 @@ public class CourierLoginTest {
         Response response = courierClient.login(wrongCourier);
 
         response.then()
-                .statusCode(404)
+                .statusCode(SC_NOT_FOUND)
                 .body("message", equalTo("Учетная запись не найдена"));
     }
 
@@ -94,7 +94,7 @@ public class CourierLoginTest {
         Response response = courierClient.login(wrongCourier);
 
         response.then()
-                .statusCode(400)
+                .statusCode(SC_BAD_REQUEST)
                 .body("message", equalTo("Недостаточно данных для входа"));
     }
 
@@ -107,7 +107,7 @@ public class CourierLoginTest {
         Response response = courierClient.login(wrongCourier);
 
         response.then()
-                .statusCode(400)
+                .statusCode(SC_BAD_REQUEST)
                 .body("message", equalTo("Недостаточно данных для входа"));
     }
 
@@ -120,7 +120,7 @@ public class CourierLoginTest {
         Response response = courierClient.login(wrongCourier);
 
         response.then()
-                .statusCode(404)
+                .statusCode(SC_NOT_FOUND)
                 .body("message", equalTo("Учетная запись не найдена"));
     }
 }

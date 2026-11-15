@@ -13,6 +13,7 @@ import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import static org.apache.http.HttpStatus.*;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -60,7 +61,7 @@ public class OrderCreateTest {
         Response response = orderClient.create(order);
 
         response.then()
-                .statusCode(201)
+                .statusCode(SC_CREATED)
                 .body("track", notNullValue());
 
         track = response.then().extract().jsonPath().getInt("track");

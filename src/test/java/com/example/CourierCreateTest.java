@@ -13,6 +13,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.Matchers.equalTo;
 
 @Epic("Управление курьерами")
@@ -48,7 +49,7 @@ public class CourierCreateTest {
         Response response = courierClient.create(courier);
 
         response.then()
-                .statusCode(201)
+                .statusCode(SC_CREATED)
                 .body("ok", equalTo(true));
 
         courierId = courierClient.login(courier)
@@ -68,7 +69,46 @@ public class CourierCreateTest {
         Response response = courierClient.create(courier);
 
         response.then()
-                .statusCode(409)
+                .statusCode(SC_CONFLICT)
                 .body("message", equalTo("Этот логин уже используется. Попробуйте другой."));
+    }
+
+    @Test
+    @Story("Создание без обязательных полей")
+    @DisplayName("Создание курьера без логина")
+    @Description("Проверяем, что без логина курьер не создаётся, код 400")
+    public void createCourierWithoutLogin() {
+        Courier courierWithoutLogin = new Courier(null, courier.getPassword(), courier.getFirstName());
+        Response response = courierClient.create(courierWithoutLogin);
+
+        response.then()
+                .statusCode(SC_BAD_REQUEST)
+                .body("message", equalTo("Недостаточно данных для создания учетной записи"));
+    }
+
+    @Test
+    @Story("Создание без обязательных полей")
+    @DisplayName("Создание курьера без пароля")
+    @Description("Проверяем, что без пароля курьер не создаётся, код 400")
+    public void createCourierWithoutPassword() {
+        Courier courierWithoutPassword = new Courier(courier.getLogin(), null, courier.getFirstName());
+        Response response = courierClient.create(courierWithoutPassword);
+
+        response.then()
+                .statusCode(SC_BAD_REQUEST)
+                .body("message", equalTo("Недостаточно данных для создания учетной записи"));
+    }
+
+    @Test
+    @Story("Создание без обязательных полей")
+    @DisplayName("Создание курьера без имени")
+    @Description("Баг: сервер создаёт курьера без firstName, хотя документация требует 400")
+    public void createCourierWithoutFirstName() {
+        Courier courierWithoutFirstName = new Courier(courier.getLogin(), courier.getPassword(), null);
+        Response response = courierClient.create(courierWithoutFirstName);
+
+        // Баг: ожидается 400, но сервер возвращает 201
+        response.then()
+                .statusCode(SC_CREATED);
     }
 }

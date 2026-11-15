@@ -9,6 +9,7 @@ import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Test;
 
+import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.Matchers.notNullValue;
 
 @Epic("Управление заказами")
@@ -25,7 +26,7 @@ public class OrderListTest {
         Response response = orderClient.getOrderList();
 
         response.then()
-                .statusCode(200)
+                .statusCode(SC_OK)
                 .body("orders", notNullValue());
     }
 }
