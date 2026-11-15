@@ -22,7 +22,6 @@ public class CourierCreateTest {
 
     private CourierClient courierClient;
     private Courier courier;
-    private int courierId;
 
     @Before
     public void setUp() {
@@ -36,8 +35,14 @@ public class CourierCreateTest {
 
     @After
     public void tearDown() {
-        if (courierId != 0) {
+        try {
+            int courierId = courierClient.login(courier)
+                    .then()
+                    .extract()
+                    .jsonPath()
+                    .getInt("id");
             courierClient.delete(courierId);
+        } catch (Exception e) {
         }
     }
 
@@ -51,12 +56,6 @@ public class CourierCreateTest {
         response.then()
                 .statusCode(SC_CREATED)
                 .body("ok", equalTo(true));
-
-        courierId = courierClient.login(courier)
-                .then()
-                .extract()
-                .jsonPath()
-                .getInt("id");
     }
 
     @Test
@@ -65,7 +64,6 @@ public class CourierCreateTest {
     @Description("Проверяем, что нельзя создать двух одинаковых курьеров, код ответа 409")
     public void createDuplicateCourier() {
         courierClient.create(courier);
-
         Response response = courierClient.create(courier);
 
         response.then()
@@ -102,12 +100,12 @@ public class CourierCreateTest {
     @Test
     @Story("Создание без обязательных полей")
     @DisplayName("Создание курьера без имени")
-    @Description("Баг: сервер создаёт курьера без firstName, хотя документация требует 400")
+    @Description("Баг API: сервер создаёт курьера без firstName, хотя документация требует 400")
     public void createCourierWithoutFirstName() {
         Courier courierWithoutFirstName = new Courier(courier.getLogin(), courier.getPassword(), null);
         Response response = courierClient.create(courierWithoutFirstName);
 
-        // Баг: ожидается 400, но сервер возвращает 201
+        // Баг API: ожидается 400, но сервер возвращает 201
         response.then()
                 .statusCode(SC_CREATED);
     }
